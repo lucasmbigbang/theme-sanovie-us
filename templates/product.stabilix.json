@@ -136,7 +136,7 @@
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "<style>\n.inventory-alert-box {\n  margin: 10px 0;\n  padding: 15px 18px;\n  background: white;\n  border: 2px solid #4A90E2;\n  border-radius: 12px;\n}\n.inventory-alert-box-wrapper {\n  width: 100%;\n}\n.people-viewing-line {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  margin-bottom: 10px;\n  font-size: 14px;\n  color: #333;\n  flex-wrap: nowrap;\n}\n.pulse-dot {\n  width: 12px;\n  height: 12px;\n  background: #4A90E2;\n  border-radius: 50%;\n  flex-shrink: 0;\n  animation: pulse-animation 2s ease-in-out infinite;\n}\n@keyframes pulse-animation {\n  0%, 100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.3;\n  }\n}\n.people-text {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  white-space: nowrap;\n}\n.people-number {\n  color: #4A90E2;\n  font-weight: 700;\n}\n.inventory-line {\n  font-size: 14px;\n  color: #333;\n}\n.stock-low {\n  color: #D32F2F;\n  font-weight: 700;\n}\n</style>\n\n<script>\n  // Force le conteneur parent du custom liquid à prendre toute la largeur\n  (function() {\n    var box = document.querySelector('.inventory-alert-box');\n    if (box) {\n      var parent = box.closest('[block-id]') || box.parentElement;\n      while (parent && parent !== document.body) {\n        var style = window.getComputedStyle(parent);\n        if (style.width !== '100%' && style.display !== 'contents') {\n          parent.style.width = '100%';\n        }\n        if (parent.classList.contains('product-details__block') || parent.hasAttribute('block-id')) break;\n        parent = parent.parentElement;\n      }\n    }\n\n    function updateRandomCount() {\n      var randomNum = Math.floor(Math.random() * 10) + 8;\n      var countElement = document.getElementById('random-count');\n      if (countElement) {\n        countElement.textContent = randomNum;\n      }\n    }\n    updateRandomCount();\n    setInterval(updateRandomCount, 15000);\n  })();\n</script>\n\n<div class=\"inventory-alert-box\">\n  <div class=\"people-viewing-line\">\n    <span class=\"pulse-dot\"></span>\n    <div class=\"people-text\">\n      <span class=\"people-number\"><span id=\"random-count\">11</span> people</span>\n      <span>are viewing this page</span>\n    </div>\n  </div>\n  \n  <div class=\"inventory-line\">\n    <strong>Inventory:</strong> <span class=\"stock-low\">Low</span>\n  </div>\n</div>"
+                    "custom_liquid": "<style>\n.inventory-alert-box {\n  margin: 10px 0;\n  padding: 15px 18px;\n  background: white;\n  border: 2px solid #4A90E2;\n  border-radius: 12px;\n  max-width: 500px;\n}\n.people-viewing-line {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  margin-bottom: 10px;\n  font-size: 14px;\n  color: #333;\n  flex-wrap: nowrap;\n}\n.pulse-dot {\n  width: 12px;\n  height: 12px;\n  background: #4A90E2;\n  border-radius: 50%;\n  flex-shrink: 0;\n  animation: pulse-animation 2s ease-in-out infinite;\n}\n@keyframes pulse-animation {\n  0%, 100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.3;\n  }\n}\n.people-text {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  white-space: nowrap;\n}\n.people-number {\n  color: #4A90E2;\n  font-weight: 700;\n}\n.inventory-line {\n  font-size: 14px;\n  color: #333;\n}\n.stock-low {\n  color: #D32F2F;\n  font-weight: 700;\n}\n</style>\n\n<div class=\"inventory-alert-box\">\n  <div class=\"people-viewing-line\">\n    <span class=\"pulse-dot\"></span>\n    <div class=\"people-text\">\n      <span class=\"people-number\"><span id=\"random-count\">11</span> people</span>\n      <span>are viewing this page</span>\n    </div>\n  </div>\n  \n  <div class=\"inventory-line\">\n    <strong>Inventory:</strong> <span class=\"stock-low\">Low</span>\n  </div>\n</div>\n\n<script>\n(function() {\n  function updateRandomCount() {\n    var randomNum = Math.floor(Math.random() * 10) + 8;\n    var countElement = document.getElementById('random-count');\n    if (countElement) {\n      countElement.textContent = randomNum;\n    }\n  }\n  updateRandomCount();\n  setInterval(updateRandomCount, 15000);\n})();\n</script>"
                   },
                   "blocks": {}
                 }
@@ -1523,6 +1523,7 @@
         "image_8teVf4": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/hf_20260330_210418_21a0f662-3ef7-4c9f-bac8-0b9b22a6a4c5.png",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -2229,6 +2230,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "Frank L.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707_8b534323-70dd-4601-aa52-126353d4910d.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2242,6 +2244,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260303_035125_3ad08eb8-430f-470a-aabb-a7872da26e83_1.png",
             "review_image_border_radius": 12,
             "review_text": "Delivered in 4 days, serious packaging. I put it on and wore it for 12 straight hours at the warehouse where I work. It didn't move a millimeter. It's lightweight, breathable, you forget it under your pants. Honestly surprised at the price.",
             "text_font_size": 14,
@@ -2262,6 +2265,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "Mike S.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707_8b534323-70dd-4601-aa52-126353d4910d.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2275,6 +2279,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260310_002552_e1908651-e1a4-4580-b1d3-7e651bcdf22d.png",
             "review_image_border_radius": 12,
             "review_text": "My wife got it for me because she was tired of seeing me limp after every bike ride. 200 kilometers this week, zero pain. The gel pad absorbs everything. Best investment of the year.",
             "text_font_size": 14,
@@ -2295,6 +2300,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "John P.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2308,6 +2314,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260217_233835_85ce5c4b-42f7-4c69-8901-365e0de7510c.png",
             "review_image_border_radius": 12,
             "review_text": "Had ACL surgery 6 months ago. My physical therapist told me to find a good support to get back into sports. I tried the Stabilix Pro during soccer on Sunday. First full game since the surgery. Almost cried.",
             "text_font_size": 14,
