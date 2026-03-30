@@ -1,1 +1,2310 @@
-{"sections": {"main": {"type": "product-information", "blocks": {"media-gallery": {"type": "_product-media-gallery", "static": true, "settings": {"media_presentation": "grid", "media_columns": "two", "image_gap": 4, "large_first_image": false, "icons_style": "none", "slideshow_controls_style": "counter", "slideshow_mobile_controls_style": "thumbnails", "thumbnail_position": "right", "thumbnail_width": 44, "thumbnail_radius": 0, "aspect_ratio": "adapt", "constrain_to_viewport": true, "media_fit": "contain", "media_radius": 0, "extend_media": false, "zoom": true, "video_loop": false, "hide_variants": true, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "product-details": {"type": "_product-details", "static": true, "settings": {"width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "details_position": "flex-start", "gap": 28, "sticky_details_desktop": true, "inherit_color_scheme": true, "color_scheme": "scheme-1", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 24, "padding-block-end": 24, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"group_icgrde": {"type": "group", "name": "Header", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "custom_height": 100, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "placeholder": "", "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"custom_liquid_HRrL34": {"type": "custom-liquid", "name": "t:names.custom_liquid", "settings": {"custom_liquid": "<style>\n  .simple-rating {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-family: Roboto, system-ui, -apple-system, Arial, sans-serif;\n    font-size: 16px;\n    color: #111;\n  }\n\n  .simple-rating .stars {\n    display: flex;\n    gap: 4px;\n    color: #FFC107; /* jaune étoiles */\n  }\n\n  .simple-rating svg {\n    width: 20px;\n    height: 20px;\n  }\n\n  .simple-rating .text {\n    color: #555;\n    white-space: nowrap;\n  }\n</style>\n\n<div class=\"simple-rating\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n        <path\n          fill=\"currentColor\"\n          d=\"M12 17.27L18.18 21l-1.64-7.03\n             L22 9.24l-7.19-.61L12 2\n             9.19 8.63 2 9.24l5.46\n             4.73L5.82 21z\"/>\n      </svg>\n    {% endfor %}\n  </div>\n\n  <div class=\"text\">\n    <strong>4,8/5</strong> (1,872 reviews)\n  </div>\n</div>"}, "blocks": {}}, "custom_liquid_caGhT8": {"type": "custom-liquid", "name": "t:names.custom_liquid", "settings": {"custom_liquid": "<div style=\"text-align:left; padding:0px 0;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0828/6594/6972/files/tecnologias_avanzadas_2.png?v=1774377907\" alt=\"Stabilix Pro\" style=\"height:55px; width:auto; display:block; margin:0 0 0px;\">\n  <p style=\"font-size:0px; font-weight:700; color:#1B2A4A; margin:0;\">The most advanced knee brace on the market</p>\n</div>"}, "blocks": {}}, "custom_liquid_c7xg3i": {"type": "custom-liquid", "name": "t:names.custom_liquid", "settings": {"custom_liquid": "<style>\n.features-list {\n  max-width: 800px;\n  margin: 0px auto;\n  padding: 0 15px;\n}\n\n.feature-item {\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n  margin-bottom: 18px;\n}\n\n.feature-check {\n  flex-shrink: 0;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  background: #28A745;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 2px;\n}\n\n.feature-check svg {\n  width: 14px;\n  height: 14px;\n  fill: white;\n}\n\n.feature-text {\n  color: #333;\n  font-size: 16px;\n  line-height: 1.5;\n  font-weight: 400;\n}\n\n@media (max-width: 768px) {\n  .features-list {\n    padding: 0 10px;\n  }\n  .feature-text {\n    font-size: 14px;\n  }\n  .feature-check {\n    width: 20px;\n    height: 20px;\n  }\n  .feature-item {\n    gap: 10px;\n    margin-bottom: 15px;\n  }\n}\n</style>\n\n<div class=\"features-list\">\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>Instant relief</strong> - Relieves joint pressure from the very first minute\n    </div>\n  </div>\n\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>Sin deslizamiento, incluso después de 12 horas</strong> - Anti-Slip Silicone Grip\n    </div>\n  </div>\n\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>2-second adjustment</strong> - SLS™ dial, no need to remove the brace\n    </div>\n  </div>\n</div>"}, "blocks": {}}, "custom_liquid_Yej4Uh": {"type": "custom-liquid", "name": "t:names.custom_liquid", "settings": {"custom_liquid": "<style>\n.inventory-alert-box {\n  margin: 10px 0;\n  padding: 15px 18px;\n  background: white;\n  border: 2px solid #4A90E2;\n  border-radius: 12px;\n  max-width: 500px;\n}\n.people-viewing-line {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  margin-bottom: 10px;\n  font-size: 14px;\n  color: #333;\n  flex-wrap: nowrap;\n}\n.pulse-dot {\n  width: 12px;\n  height: 12px;\n  background: #4A90E2;\n  border-radius: 50%;\n  flex-shrink: 0;\n  animation: pulse-animation 2s ease-in-out infinite;\n}\n@keyframes pulse-animation {\n  0%, 100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.3;\n  }\n}\n.people-text {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  white-space: nowrap;\n}\n.people-number {\n  color: #4A90E2;\n  font-weight: 700;\n}\n.inventory-line {\n  font-size: 14px;\n  color: #333;\n}\n.stock-low {\n  color: #D32F2F;\n  font-weight: 700;\n}\n</style>\n\n<div class=\"inventory-alert-box\">\n  <div class=\"people-viewing-line\">\n    <span class=\"pulse-dot\"></span>\n    <div class=\"people-text\">\n      <span class=\"people-number\"><span id=\"random-count\">11</span> people</span>\n      <span>are viewing this page </span>\n    </div>\n  </div>\n  \n  <div class=\"inventory-line\">\n    <strong>Inventory:</strong> <span class=\"stock-low\">Low</span>\n  </div>\n</div>\n\n<script>\n(function() {\n  function updateRandomCount() {\n    var randomNum = Math.floor(Math.random() * 10) + 8; // Entre 8 et 17\n    var countElement = document.getElementById('random-count');\n    if (countElement) {\n      countElement.textContent = randomNum;\n    }\n  }\n  \n  // Première mise à jour\n  updateRandomCount();\n  \n  // Mise à jour toutes les 15 secondes\n  setInterval(updateRandomCount, 15000);\n})();\n</script>"}, "blocks": {}}}, "block_order": ["custom_liquid_HRrL34", "custom_liquid_caGhT8", "custom_liquid_c7xg3i", "custom_liquid_Yej4Uh"]}, "buy_buttons_eYQEYi": {"type": "buy-buttons", "settings": {"stacking": false, "show_pickup_availability": false, "gift_card_form": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"quantity": {"type": "quantity", "disabled": true, "static": true, "settings": {}, "blocks": {}}, "add-to-cart": {"type": "add-to-cart", "static": true, "settings": {"style_class": "button"}, "blocks": {}}, "accelerated-checkout": {"type": "accelerated-checkout", "disabled": true, "static": true, "settings": {}, "blocks": {}}}, "block_order": []}, "custom_liquid_FGePRW": {"type": "custom-liquid", "name": "t:names.custom_liquid", "settings": {"custom_liquid": "<div class=\"shipping-bar\">\n  <div class=\"shipping-left\">\n    <span class=\"dot\"></span>\n    <span id=\"shipping-date\">Ships within <strong>48h</strong></span>\n  </div>\n\n  <div class=\"shipping-right\">\n    <img \n      src=\"https://cdn.shopify.com/s/files/1/0828/6594/6972/files/La_rodillera_mas_avanzada_del_mercado_1.png?v=1774377140\" \n      alt=\"La Poste\"\n    />\n    <span>FREE SHIPPING on orders over $65</span>\n  </div>\n</div>\n\n<style>\n.shipping-bar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 16px;\n  padding: 14px 18px;\n  background: #f7f7f7;\n  border-radius: 12px;\n  font-size: 12px;\n  line-height: 1.3;\n}\n\n.shipping-left {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.dot {\n  width: 12px;\n  height: 12px;\n  background: #2e7d32;\n  border-radius: 50%;\n}\n\n.shipping-right {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  font-weight: 600;\n}\n\n.shipping-right img {\n  height: 20px;\n  width: auto;\n}\n\n@media (max-width: 768px) {\n  .shipping-bar {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 8px;\n  }\n}\n</style>"}, "blocks": {}}, "accordion_bHQaLX": {"type": "accordion", "name": "t:names.accordion", "settings": {"icon": "caret", "dividers": true, "type_preset": "h6", "inherit_color_scheme": true, "color_scheme": "", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"accordion_row_YaeBdJ": {"type": "_accordion-row", "settings": {"heading": "Product Details", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_PmB8Xp": {"type": "text", "settings": {"text": "<p><strong>Format</strong>: Adjustable knee brace with SLS™ tension dial: Left or right<br/><br/><strong>Weight</strong>: Approximately 280 g (ultra-light, invisible under clothing)<br/><br/><strong>Type</strong>: Advanced compression knee brace with patellar and lateral stabilization<br/><br/><strong>Benefits:</strong> <br/>✅ Relieves knee pain from the very first use<br/>✅ Stabilizes the patella and reduces joint pressure<br/>✅ Supports without restricting: regain your natural mobility<br/>✅ Prevents worsening of pain related to wear, sports or excess weight<br/><br/><strong>Unique features</strong>: <br/>✅ Integrated patellar GEL pad: absorbs impacts and protects the kneecap (not just basic compression)<br/>✅ Dual flexible steel lateral stabilizers: targeted support, no unwanted movement<br/>✅ SLS™ tension dial: adjust compression in 2 seconds without removing the brace<br/>✅ Anti-slip silicone grip: stays in place even after 12 hours of intense activity<br/><br/><strong>Contents</strong>: 1 Stabilix Pro™ knee brace (left or right)<br/><br/><strong>Easy to use</strong>: <br/>✅ Ready to wear: put it on, adjust it and move<br/>✅ Adjustable sizing: choose your size (M / L / XL / XXL) then fine-tune with the SLS™ dial<br/>✅ Breathable and thermoregulating fabric: designed for all-day extended wear</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_PmB8Xp"]}, "accordion_row_awGbmQ": {"type": "_accordion-row", "settings": {"heading": "Shipping & Returns", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_P4yAHy": {"type": "text", "settings": {"text": "<p><strong>Shipping:</strong> <br/>Your packages are shipped within 1 to 2 business days, and home delivery takes 5 to 9 business days, depending on the shipping method chosen. Our team personally oversees the preparation and shipping of your orders, working with our logistics partners to ensure fast and secure delivery.<br/><br/><strong>Returns</strong>: <br/>We want every order to bring you complete satisfaction. If not, you have 30 days to return the product, for any reason. Our customer service team is available to help you and make the return process simple and quick.<br/><br/><strong>Additional information: </strong><br/>During periods of high demand, delivery times may be slightly longer, but don't worry! Our team will keep you informed by email so you know exactly when to expect your package.<br/><br/>For any questions, our team is available by email at info@sanoviaus.com. <br/>We're here to help!</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_P4yAHy"]}, "accordion_row_GjptGN": {"type": "_accordion-row", "settings": {"heading": "Satisfaction Guarantee", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_jcBxJw": {"type": "text", "settings": {"text": "<p><strong>30-Day Satisfaction Guarantee or Your Money Back</strong><br/>At Sanovia, we believe in the quality of our products and in the complete satisfaction of our customers. That's why we offer a 30-day satisfaction guarantee or your money back. <br/><br/><strong>How does it work?</strong> <br/>If for any reason you are not completely satisfied with your purchase, you have 30 days from receipt of your order to return it to us, and we will issue a full refund, no questions asked. You can shop with complete confidence, knowing there is zero risk.<br/><br/>This guarantee allows you to try our products at home, in your daily life, and see the quality for yourself. If this product doesn't meet your expectations, we simplify the return process to provide you with a smooth and pleasant customer experience.<br/><br/><strong>Our goal: your satisfaction. </strong><br/>Don't hesitate, place your order now and discover the Sanovia difference with the peace of mind that comes with our satisfaction guarantee.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_jcBxJw"]}}, "block_order": ["accordion_row_YaeBdJ", "accordion_row_awGbmQ", "accordion_row_GjptGN"]}}, "block_order": ["group_icgrde", "buy_buttons_eYQEYi", "custom_liquid_FGePRW", "accordion_bHQaLX"]}}, "settings": {"content_width": "content-center-aligned", "desktop_media_position": "left", "equal_columns": false, "limit_details_width": false, "gap": 48, "enable_sticky_add_to_cart": true, "color_scheme": "", "padding-block-start": 0, "padding-block-end": 0}}, "carousel_g77Frj": {"type": "carousel", "blocks": {"static-header": {"type": "group", "name": "t:names.header", "static": true, "settings": {"content_direction": "row", "vertical_on_mobile": false, "horizontal_alignment": "space-between", "vertical_alignment": "flex-end", "align_baseline": true, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "custom_height": 100, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "placeholder": "", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"text_CJw4XK": {"type": "text", "name": "t:names.header", "settings": {"text": "<p>They got their mobility back</p>", "width": "100%", "max_width": "normal", "alignment": "center", "type_preset": "h3", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_CJw4XK"]}, "static-carousel-content": {"type": "_carousel-content", "name": "t:names.carousel_content", "static": true, "settings": {"inherit_color_scheme": true, "color_scheme": "", "height": "fit", "position": "top", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"card_JLaHD3": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_3jCpqX": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_6_230b7dad-817b-4da4-a6e9-3995ba46d6e3.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_3jCpqX"]}, "card_FmFBBH": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_HWYK9D": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_1_e77bbc02-8062-4395-b3d7-839f1b0c3bf5.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_HWYK9D"]}, "card_RbD6EG": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_pctMHb": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_1_9f4f9c76-f84f-4d46-b26e-040d6537e760.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_pctMHb"]}, "card_Vn3HY7": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_VgTnFH": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_2_7059b534-b5d7-499d-a3c4-8bcd57154b71.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_VgTnFH"]}, "card_E6YcP4": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_D4nhq6": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/hf_20260217_235349_cf6e1994-487f-4c31-8608-b6ffc01061e2_1.png", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_D4nhq6"]}, "card_4zfHrc": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_V8iCcF": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_4_936a2aae-12b3-4c6d-b7b8-dcc79146ca14.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_V8iCcF"]}, "card_pmNjAa": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_CY6Tih": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_5_c584d7d1-dadd-4196-9b7d-295e808b86d4.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_CY6Tih"]}, "card_xeWAWx": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_yEGbXw": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_3_a0e86b34-35f9-49ed-ad18-76fed9f98f78.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_yEGbXw"]}, "card_nF6byX": {"type": "_card", "name": "t:names.card", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 0, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "aspect_ratio": "adapt", "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"image_F6ahPF": {"type": "image", "name": "t:names.image", "settings": {"image": "shopify://shop_images/download_7_a11da12f-16aa-49e4-b02e-4d168d58b193.jpg", "link": "", "image_ratio": "portrait", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["image_F6ahPF"]}}, "block_order": ["card_JLaHD3", "card_FmFBBH", "card_RbD6EG", "card_Vn3HY7", "card_E6YcP4", "card_4zfHrc", "card_pmNjAa", "card_xeWAWx", "card_nF6byX"]}}, "name": "t:names.carousel", "settings": {"columns": 3, "mobile_columns": "1", "section_width": "page-width", "columns_gap": 12, "color_scheme": "", "icons_style": "arrow", "icons_shape": "none", "padding-block-start": 0, "padding-block-end": 48}}, "1773868373d9bcc930": {"type": "_blocks", "blocks": {"ai_gen_block_d9cb4a2_k9wgtf": {"type": "ai_gen_block_d9cb4a2", "settings": {"header_image": "shopify://shop_images/tecnologias_avanzadas_2.png", "header_image_width": 100, "header_title": "", "header_title_color": "#ffffff", "header_title_size": 16, "header_spacing": 20, "card_background": "#ffffff", "card_border_radius": 12, "card_shadow_opacity": 0.1, "card_padding": 20, "grid_gap": 20, "card_title_color": "#1b2a4a", "card_title_size": 16, "card_divider_color": "#1b2a4a", "card_text_color": "#666666", "card_text_size": 12, "card_1_enabled": true, "card_1_image": "shopify://shop_images/download_8_cbaf4a61-fbb0-4371-be18-b8668e61f371.jpg", "card_1_title": "SLS Tension Dial", "card_1_text": "Adjustment dial that lets you tighten or loosen the brace with a single motion, for personalized and precise support.", "card_2_enabled": true, "card_2_image": "shopify://shop_images/download_9_5d086e21-3b00-4394-afce-c876980ff844.jpg", "card_2_title": "Dual Steel Lateral Stabilizers", "card_2_text": "Prevent excessive lateral movement, reinforce joint support, while preserving natural flexibility.", "card_3_enabled": true, "card_3_image": "shopify://shop_images/download_10_42566467-4d7c-4dd8-b1c2-3e9e97d7a80c_2.jpg", "card_3_title": "Integrated Patellar GEL Pad", "card_3_text": "Protects the kneecap, absorbs impacts and reduces joint pressure for immediate comfort, even during movement.", "card_4_enabled": true, "card_4_image": "shopify://shop_images/download_11_923845f8-0dbc-4468-8cd6-8ebec0ea8d72.jpg", "card_4_title": "Anti-Slip Silicone Grip", "card_4_text": "Prevents the brace from slipping or rolling, even during intense activities. Secure hold guaranteed all day long."}, "blocks": {}}}, "block_order": ["ai_gen_block_d9cb4a2_k9wgtf"], "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 0, "padding-block-end": 0}}, "17738685492801d9db": {"type": "_blocks", "blocks": {"ai_gen_block_07555ee_Hri3GQ": {"type": "ai_gen_block_07555ee", "settings": {"title": "What the experts say", "title_size": 46, "title_color": "#000000", "title_spacing": 40, "expert_image": "shopify://shop_images/hf_20260324_185315_a998f812-76a6-4fcd-ad02-c8d2b4fa0797.jpg", "image_size": 120, "quote": "I'm a physical therapist and I see dozens of knee braces; most compress without stabilizing. The Stabilix Pro™ is the only one I recommend to my patients and use myself. I cycle 150 km a week with an old meniscus injury: zero pain, zero slipping, even in the rain. The SLS™ dial lets me adjust compression while pedaling. Unheard of at this price.", "quote_size": 16, "quote_color": "#000000", "expert_name": "Dr. James Anderson", "name_size": 18, "expert_role": "Sports physical therapist and amateur cyclist", "role_size": 14, "role_color": "#666666", "card_background": "#ffffff", "card_radius": 20, "card_padding": 40, "card_gap": 20, "shadow_x": 0, "shadow_y": 4, "shadow_blur": 20, "shadow_color": "#0000000f", "accent_color": "#1d3686", "background_color": "#ffffff", "max_width": 700, "section_padding": 60, "desktop_width_percent": 100}, "blocks": {}}}, "block_order": ["ai_gen_block_07555ee_Hri3GQ"], "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 0, "padding-block-end": 0}}, "section_NQYAfm": {"type": "section", "blocks": {"image_4VtbfV": {"type": "image", "settings": {"image": "shopify://shop_images/hf_20260218_001039_909fa3b4-d18f-400b-bd23-908ad0d9b7f6_1.png", "link": "", "image_ratio": "square", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "group_dC8an4": {"type": "group", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "width": "custom", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "custom_height": 100, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "placeholder": "", "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"text_QGTwWz": {"type": "text", "name": "t:names.heading", "settings": {"text": "<p>Deep support, not just compression</p>", "width": "100%", "max_width": "normal", "alignment": "center", "type_preset": "h3", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "text_NgdCac": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>The Stabilix Pro™ doesn't just compress the knee like a conventional brace.</p>", "width": "100%", "max_width": "narrow", "alignment": "center", "type_preset": "custom", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "text_P9FBba": {"type": "text", "settings": {"text": "<p>Its <strong>patellar GEL pad</strong> stabilizes the kneecap and absorbs every impact. </p><p><strong>Its dual flexible steel stabilizers</strong> prevent the lateral movements that worsen your pain. </p><p>Result: the joint stays <strong>in its natural axis, pressure is reduced immediately, and recovery is accelerated</strong>, whether after an injury, surgery or simply years of wear and tear.</p>", "width": "100%", "max_width": "narrow", "alignment": "center", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_QGTwWz", "text_NgdCac", "text_P9FBba"]}}, "block_order": ["image_4VtbfV", "group_dC8an4"], "name": "t:names.image_with_text", "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 32, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 40, "padding-block-end": 40}}, "section_gHP3tq": {"type": "section", "blocks": {"image_dCjc8z": {"type": "image", "settings": {"image": "shopify://shop_images/hf_20260218_001422_4ec2330a-3ea1-416f-80a4-d938f2470687_1.png", "link": "", "image_ratio": "square", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "group_a4txD8": {"type": "group", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "width": "custom", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "custom_height": 100, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "placeholder": "", "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"text_aUF3ex": {"type": "text", "name": "t:names.heading", "settings": {"text": "<p>Put it on. Forget it. Move.</p>", "width": "100%", "max_width": "normal", "alignment": "center", "type_preset": "h3", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "text_VkNFxq": {"type": "text", "settings": {"text": "<p>Zero slipping even after 12 hours. The silicone grip locks the brace in place. Zero discomfort. The thermoregulating fabric is worn under jeans, work pants or athletic shorts without anyone noticing. Zero hassle. The SLS™ dial adjusts compression in 2 seconds, without removing the brace. You don't feel it anymore. Neither does your knee.</p>", "width": "100%", "max_width": "narrow", "alignment": "center", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_aUF3ex", "text_VkNFxq"]}}, "block_order": ["image_dCjc8z", "group_a4txD8"], "name": "t:names.image_with_text", "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 32, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 40, "padding-block-end": 40}}, "section_VJLWi7": {"type": "section", "blocks": {"image_8teVf4": {"type": "image", "settings": {"image": "shopify://shop_images/hf_20260318_174454_a2160fa3-128a-4b38-ae6c-5f2142d46903.jpg", "link": "", "image_ratio": "square", "width": "fill", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "group_P69nhR": {"type": "group", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "width": "custom", "custom_width": 100, "width_mobile": "fill", "custom_width_mobile": 100, "height": "fit", "custom_height": 100, "inherit_color_scheme": true, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "link": "", "open_in_new_tab": false, "placeholder": "", "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"text_87YpEU": {"type": "text", "name": "t:names.heading", "settings": {"text": "<p>Size guide for optimal support</p>", "width": "100%", "max_width": "normal", "alignment": "center", "type_preset": "h3", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "text_J8i7Pd": {"type": "text", "settings": {"text": "<p>Grab a measuring tape, measure the circumference of your knee at its widest point, and check the chart to choose the size that will give you the best support.</p>", "width": "100%", "max_width": "narrow", "alignment": "center", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_87YpEU", "text_J8i7Pd"]}}, "block_order": ["image_8teVf4", "group_P69nhR"], "name": "t:names.image_with_text", "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 32, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 40, "padding-block-end": 40}}, "section_w9cwGq": {"type": "section", "blocks": {"text_4XtVJw": {"type": "text", "name": "t:names.heading", "settings": {"text": "<h3>Frequently Asked Questions</h3>", "width": "100%", "max_width": "narrow", "alignment": "center", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}, "accordion_awyjgt": {"type": "accordion", "name": "t:names.accordion", "settings": {"icon": "caret", "dividers": true, "type_preset": "h5", "inherit_color_scheme": true, "color_scheme": "", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {"accordion_row_7fDxeK": {"type": "_accordion-row", "settings": {"heading": "Can I wash the knee brace?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_CYQGxB": {"type": "text", "settings": {"text": "<p>Yes! It can be machine washed on a delicate cycle, but hand washing is recommended to extend its lifespan. Let it air dry, avoid the dryer and high temperatures.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_CYQGxB"]}, "accordion_row_Gjxndk": {"type": "_accordion-row", "settings": {"heading": "Can I return my order if I'm not satisfied?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_YrEnLh": {"type": "text", "settings": {"text": "<p>Absolutely. Sanovia offers a 60-day satisfaction guarantee or your money back. If the Stabilix Pro™ doesn't suit you, you can return it for a full refund. Returns are easily processed through our online portal — a prepaid return label will be provided.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_YrEnLh"]}, "accordion_row_zYkmah": {"type": "_accordion-row", "name": "t:names.accordion_row", "settings": {"heading": "Will the knee brace fit me?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_y3WDQH": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>Yes! The Stabilix Pro™ is equipped with SLS™ quick-adjust technology, allowing precise and secure fitting. It's available in multiple sizes (M, L, XL, XXL) to fit all body types.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_y3WDQH"]}, "accordion_row_XUBMtH": {"type": "_accordion-row", "name": "t:names.accordion_row", "settings": {"heading": "How does it improve athletic performance?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_RPbArp": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>By keeping muscles warm and reducing fatigue, the Stabilix Pro™ helps prevent injuries, improve endurance and accelerate recovery. The compression and targeted support reduce stress on the knee during high-impact activities: running, jumping, weight training.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_RPbArp"]}, "accordion_row_y7h7wp": {"type": "_accordion-row", "name": "t:names.accordion_row", "settings": {"heading": "Does it slip or roll during movement?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_gYTJn9": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>No. The anti-slip silicone band keeps the brace in place, even during intense workouts. Unlike classic knee braces that require constant readjustment, the Stabilix Pro™ stays put without friction or discomfort.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_gYTJn9"]}, "accordion_row_X7kCxt": {"type": "_accordion-row", "name": "t:names.accordion_row", "settings": {"heading": "Where is the product shipped from? What are the shipping costs?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_LVEUEG": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>We ship from our US warehouse. Shipping is free on orders over $65. In case of local stock shortage, your order will be shipped from the nearest international warehouse to your address.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_LVEUEG"]}, "accordion_row_yXQg3W": {"type": "_accordion-row", "name": "t:names.accordion_row", "settings": {"heading": "When will I receive my order?", "open_by_default": false, "icon": "none", "width": 20}, "blocks": {"text_ccErga": {"type": "text", "name": "t:names.text", "settings": {"text": "<p>Orders are processed within 24 to 48 hours. Once shipped, delivery typically takes 5 to 7 business days in the US.</p>", "width": "100%", "max_width": "normal", "alignment": "left", "type_preset": "rte", "font": "var(--font-body--family)", "font_size": "1rem", "line_height": "normal", "letter_spacing": "normal", "case": "none", "wrap": "pretty", "color": "var(--color-foreground)", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 0, "padding-inline-end": 0}, "blocks": {}}}, "block_order": ["text_ccErga"]}}, "block_order": ["accordion_row_7fDxeK", "accordion_row_Gjxndk", "accordion_row_zYkmah", "accordion_row_XUBMtH", "accordion_row_y7h7wp", "accordion_row_X7kCxt", "accordion_row_yXQg3W"]}}, "block_order": ["text_4XtVJw", "accordion_awyjgt"], "name": "t:names.faq_section", "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "center", "vertical_alignment_flex_direction_column": "center", "gap": 22, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 48, "padding-block-end": 48}}, "17738701197520caa6": {"type": "_blocks", "blocks": {"ai_gen_block_66ce386_ewdG9z": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "James A.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "1 hour ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260218_002159_cd3bb996-583b-415f-9da2-948b94451106_1.png", "review_image_border_radius": 12, "review_text": "I'm a construction worker, on my feet 10 hours a day. My knees used to wake me up at night. From the first day with the Stabilix Pro, I noticed the difference. It's been 3 weeks, I never take it off.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}}, "block_order": ["ai_gen_block_66ce386_ewdG9z"], "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 0, "padding-block-end": 0}}, "blocks_wL6T4B": {"type": "_blocks", "blocks": {"ai_gen_block_66ce386_km48Uy": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "Michael G.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "3 hours ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260218_000146_313c317e-c9f0-4c63-9365-0310910259f8_1.png", "review_image_border_radius": 12, "review_text": "I got back to tennis after an 8-month break due to meniscus pain. The SLS dial is great, I adjust between sets without removing the brace. No slipping even while running.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}, "ai_gen_block_66ce386_mjxKnL": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "Anthony R.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "3 hours ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260217_235750_d7fa9ca1-68dc-44b0-b812-ec815a632fe9_1.png", "review_image_border_radius": 12, "review_text": "Great product, well made. The gel on the kneecap really helps. Nothing to complain about, holds up all day, much better than the ones I had before.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}, "ai_gen_block_66ce386_e4dxNA": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "Sarah C.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "5 hours ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260217_233835_85ce5c4b-42f7-4c69-8901-365e0de7510c.png", "review_image_border_radius": 12, "review_text": "Left knee arthritis for 4 years. I've spent a fortune on pharmacy knee braces that all end up rolled down to my ankle. This one doesn't move. The inner silicone does its job. I ordered a second one for my other knee.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}, "ai_gen_block_66ce386_hN383X": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "Frank L.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "6 hours ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260217_233835_f90c960b-f79e-4cc0-86e3-460d13b54bf9.png", "review_image_border_radius": 12, "review_text": "Delivered in 4 days, serious packaging. I put it on and wore it for 12 straight hours at the warehouse where I work. It didn't move a millimeter. It's lightweight, breathable, you forget it under your pants. Honestly surprised at the price.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}, "ai_gen_block_66ce386_LJaJhU": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "Mike S.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "8 hours ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260303_035125_3ad08eb8-430f-470a-aabb-a7872da26e83_1.png", "review_image_border_radius": 12, "review_text": "My wife got it for me because she was tired of seeing me limp after every bike ride. 200 kilometers this week, zero pain. The gel pad absorbs everything. Best investment of the year.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}, "ai_gen_block_66ce386_EM8kTP": {"type": "ai_gen_block_66ce386", "settings": {"author_name": "John P.", "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif", "image_size": 60, "image_border_radius": 50, "author_font_size": 16, "author_font_weight": "600", "author_color": "#000000", "time_text": "1 day ago", "time_font_size": 13, "time_color": "#666666", "star_rating": 5, "star_size": 20, "star_spacing": 4, "star_color": "#ffd700", "star_empty_color": "#e0e0e0", "review_image": "shopify://shop_images/hf_20260310_002552_e1908651-e1a4-4580-b1d3-7e651bcdf22d.png", "review_image_border_radius": 12, "review_text": "Had ACL surgery 6 months ago. My physical therapist told me to find a good support to get back into sports. I tried the Stabilix Pro during soccer on Sunday. First full game since the surgery. Almost cried.", "text_font_size": 14, "text_color": "#333333", "desktop_width_percent": 100, "background_color": "#ffffff", "border_radius": 16, "padding": 20, "spacing": 16, "shadow_horizontal": 0, "shadow_vertical": 4, "shadow_blur": 12, "shadow_color": "#00000014"}, "blocks": {}}}, "block_order": ["ai_gen_block_66ce386_km48Uy", "ai_gen_block_66ce386_mjxKnL", "ai_gen_block_66ce386_e4dxNA", "ai_gen_block_66ce386_hN383X", "ai_gen_block_66ce386_LJaJhU", "ai_gen_block_66ce386_EM8kTP"], "settings": {"content_direction": "column", "vertical_on_mobile": true, "horizontal_alignment": "flex-start", "vertical_alignment": "center", "align_baseline": false, "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 12, "section_width": "page-width", "section_height": "", "section_height_custom": 50, "color_scheme": "", "background_media": "none", "video_position": "cover", "background_image_position": "cover", "border": "none", "border_width": 1, "border_opacity": 100, "border_radius": 0, "toggle_overlay": false, "overlay_color": "#00000026", "overlay_style": "solid", "gradient_direction": "to top", "padding-block-start": 0, "padding-block-end": 0}}, "divider_wWQ8Ke": {"type": "divider", "name": "t:names.divider_section", "settings": {"color_scheme": "", "section_width": "full-width", "thickness": 1, "corner_radius": "square", "width_percent": 100, "alignment_horizontal": "center", "padding-block-start": 16, "padding-block-end": 16}}}, "order": ["main", "carousel_g77Frj", "1773868373d9bcc930", "17738685492801d9db", "section_NQYAfm", "section_gHP3tq", "section_VJLWi7", "section_w9cwGq", "17738701197520caa6", "blocks_wL6T4B", "divider_wWQ8Ke"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "thumbnails",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "custom_liquid_HRrL34": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<style>\n  .simple-rating {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-family: Roboto, system-ui, -apple-system, Arial, sans-serif;\n    font-size: 16px;\n    color: #111;\n  }\n\n  .simple-rating .stars {\n    display: flex;\n    gap: 4px;\n    color: #FFC107; /* jaune étoiles */\n  }\n\n  .simple-rating svg {\n    width: 20px;\n    height: 20px;\n  }\n\n  .simple-rating .text {\n    color: #555;\n    white-space: nowrap;\n  }\n</style>\n\n<div class=\"simple-rating\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n        <path\n          fill=\"currentColor\"\n          d=\"M12 17.27L18.18 21l-1.64-7.03\n             L22 9.24l-7.19-.61L12 2\n             9.19 8.63 2 9.24l5.46\n             4.73L5.82 21z\"/>\n      </svg>\n    {% endfor %}\n  </div>\n\n  <div class=\"text\">\n    <strong>4,8/5</strong> (1,872 reviews)\n  </div>\n</div>"
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_caGhT8": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<div style=\"text-align:left; padding:0px 0;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0828/6594/6972/files/tecnologias_avanzadas_2.png?v=1774377907\" alt=\"Stabilix Pro\" style=\"height:55px; width:auto; display:block; margin:0 0 0px;\">\n  <p style=\"font-size:0px; font-weight:700; color:#1B2A4A; margin:0;\">The most advanced knee brace on the market</p>\n</div>"
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_c7xg3i": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<style>\n.features-list {\n  max-width: 800px;\n  margin: 0px auto;\n  padding: 0 15px;\n}\n\n.feature-item {\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n  margin-bottom: 18px;\n}\n\n.feature-check {\n  flex-shrink: 0;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  background: #28A745;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: 2px;\n}\n\n.feature-check svg {\n  width: 14px;\n  height: 14px;\n  fill: white;\n}\n\n.feature-text {\n  color: #333;\n  font-size: 16px;\n  line-height: 1.5;\n  font-weight: 400;\n}\n\n@media (max-width: 768px) {\n  .features-list {\n    padding: 0 10px;\n  }\n  .feature-text {\n    font-size: 14px;\n  }\n  .feature-check {\n    width: 20px;\n    height: 20px;\n  }\n  .feature-item {\n    gap: 10px;\n    margin-bottom: 15px;\n  }\n}\n</style>\n\n<div class=\"features-list\">\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>Instant relief</strong> - Relieves joint pressure from the very first minute\n    </div>\n  </div>\n\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>Sin deslizamiento, incluso después de 12 horas</strong> - Anti-Slip Silicone Grip\n    </div>\n  </div>\n\n  <div class=\"feature-item\">\n    <div class=\"feature-check\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/>\n      </svg>\n    </div>\n    <div class=\"feature-text\">\n      <strong>2-second adjustment</strong> - SLS™ dial, no need to remove the brace\n    </div>\n  </div>\n</div>"
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_Yej4Uh": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<style>\n.inventory-alert-box {\n  margin: 10px 0;\n  padding: 15px 18px;\n  background: white;\n  border: 2px solid #4A90E2;\n  border-radius: 12px;\n  max-width: 500px;\n}\n.people-viewing-line {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  margin-bottom: 10px;\n  font-size: 14px;\n  color: #333;\n  flex-wrap: nowrap;\n}\n.pulse-dot {\n  width: 12px;\n  height: 12px;\n  background: #4A90E2;\n  border-radius: 50%;\n  flex-shrink: 0;\n  animation: pulse-animation 2s ease-in-out infinite;\n}\n@keyframes pulse-animation {\n  0%, 100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.3;\n  }\n}\n.people-text {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  white-space: nowrap;\n}\n.people-number {\n  color: #4A90E2;\n  font-weight: 700;\n}\n.inventory-line {\n  font-size: 14px;\n  color: #333;\n}\n.stock-low {\n  color: #D32F2F;\n  font-weight: 700;\n}\n</style>\n\n<div class=\"inventory-alert-box\">\n  <div class=\"people-viewing-line\">\n    <span class=\"pulse-dot\"></span>\n    <div class=\"people-text\">\n      <span class=\"people-number\"><span id=\"random-count\">11</span> people</span>\n      <span>are viewing this page </span>\n    </div>\n  </div>\n  \n  <div class=\"inventory-line\">\n    <strong>Inventory:</strong> <span class=\"stock-low\">Low</span>\n  </div>\n</div>\n\n<script>\n(function() {\n  function updateRandomCount() {\n    var randomNum = Math.floor(Math.random() * 10) + 8; // Entre 8 et 17\n    var countElement = document.getElementById('random-count');\n    if (countElement) {\n      countElement.textContent = randomNum;\n    }\n  }\n  \n  // Première mise à jour\n  updateRandomCount();\n  \n  // Mise à jour toutes les 15 secondes\n  setInterval(updateRandomCount, 15000);\n})();\n</script>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "custom_liquid_HRrL34",
+                "custom_liquid_caGhT8",
+                "custom_liquid_c7xg3i",
+                "custom_liquid_Yej4Uh"
+              ]
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": false,
+                "show_pickup_availability": false,
+                "gift_card_form": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "custom_liquid_FGePRW": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<div class=\"shipping-bar\">\n  <div class=\"shipping-left\">\n    <span class=\"dot\"></span>\n    <span id=\"shipping-date\">Ships within <strong>48h</strong></span>\n  </div>\n\n  <div class=\"shipping-right\">\n    <img \n      src=\"https://cdn.shopify.com/s/files/1/0828/6594/6972/files/La_rodillera_mas_avanzada_del_mercado_1.png?v=1774377140\" \n      alt=\"La Poste\"\n    />\n    <span>FREE SHIPPING on orders over $65</span>\n  </div>\n</div>\n\n<style>\n.shipping-bar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 16px;\n  padding: 14px 18px;\n  background: #f7f7f7;\n  border-radius: 12px;\n  font-size: 12px;\n  line-height: 1.3;\n}\n\n.shipping-left {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.dot {\n  width: 12px;\n  height: 12px;\n  background: #2e7d32;\n  border-radius: 50%;\n}\n\n.shipping-right {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  font-weight: 600;\n}\n\n.shipping-right img {\n  height: 20px;\n  width: auto;\n}\n\n@media (max-width: 768px) {\n  .shipping-bar {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 8px;\n  }\n}\n</style>"
+              },
+              "blocks": {}
+            },
+            "accordion_bHQaLX": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_YaeBdJ": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Product Details",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_PmB8Xp": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Format</strong>: Adjustable knee brace with SLS™ tension dial: Left or right<br/><br/><strong>Weight</strong>: Approximately 280 g (ultra-light, invisible under clothing)<br/><br/><strong>Type</strong>: Advanced compression knee brace with patellar and lateral stabilization<br/><br/><strong>Benefits:</strong> <br/>✅ Relieves knee pain from the very first use<br/>✅ Stabilizes the patella and reduces joint pressure<br/>✅ Supports without restricting: regain your natural mobility<br/>✅ Prevents worsening of pain related to wear, sports or excess weight<br/><br/><strong>Unique features</strong>: <br/>✅ Integrated patellar GEL pad: absorbs impacts and protects the kneecap (not just basic compression)<br/>✅ Dual flexible steel lateral stabilizers: targeted support, no unwanted movement<br/>✅ SLS™ tension dial: adjust compression in 2 seconds without removing the brace<br/>✅ Anti-slip silicone grip: stays in place even after 12 hours of intense activity<br/><br/><strong>Contents</strong>: 1 Stabilix Pro™ knee brace (left or right)<br/><br/><strong>Easy to use</strong>: <br/>✅ Ready to wear: put it on, adjust it and move<br/>✅ Adjustable sizing: choose your size (M / L / XL / XXL) then fine-tune with the SLS™ dial<br/>✅ Breathable and thermoregulating fabric: designed for all-day extended wear</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_PmB8Xp"
+                  ]
+                },
+                "accordion_row_awGbmQ": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Shipping & Returns",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_P4yAHy": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Shipping:</strong> <br/>Your packages are shipped within 1 to 2 business days, and home delivery takes 5 to 9 business days, depending on the shipping method chosen. Our team personally oversees the preparation and shipping of your orders, working with our logistics partners to ensure fast and secure delivery.<br/><br/><strong>Returns</strong>: <br/>We want every order to bring you complete satisfaction. If not, you have 30 days to return the product, for any reason. Our customer service team is available to help you and make the return process simple and quick.<br/><br/><strong>Additional information: </strong><br/>During periods of high demand, delivery times may be slightly longer, but don't worry! Our team will keep you informed by email so you know exactly when to expect your package.<br/><br/>For any questions, our team is available by email at info@sanoviaus.com. <br/>We're here to help!</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_P4yAHy"
+                  ]
+                },
+                "accordion_row_GjptGN": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Satisfaction Guarantee",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_jcBxJw": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>30-Day Satisfaction Guarantee or Your Money Back</strong><br/>At Sanovia, we believe in the quality of our products and in the complete satisfaction of our customers. That's why we offer a 30-day satisfaction guarantee or your money back. <br/><br/><strong>How does it work?</strong> <br/>If for any reason you are not completely satisfied with your purchase, you have 30 days from receipt of your order to return it to us, and we will issue a full refund, no questions asked. You can shop with complete confidence, knowing there is zero risk.<br/><br/>This guarantee allows you to try our products at home, in your daily life, and see the quality for yourself. If this product doesn't meet your expectations, we simplify the return process to provide you with a smooth and pleasant customer experience.<br/><br/><strong>Our goal: your satisfaction. </strong><br/>Don't hesitate, place your order now and discover the Sanovia difference with the peace of mind that comes with our satisfaction guarantee.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_jcBxJw"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_YaeBdJ",
+                "accordion_row_awGbmQ",
+                "accordion_row_GjptGN"
+              ]
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "buy_buttons_eYQEYi",
+            "custom_liquid_FGePRW",
+            "accordion_bHQaLX"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "carousel_g77Frj": {
+      "type": "carousel",
+      "blocks": {
+        "static-header": {
+          "type": "group",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_CJw4XK": {
+              "type": "text",
+              "name": "t:names.header",
+              "settings": {
+                "text": "<p>They got their mobility back</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_CJw4XK"
+          ]
+        },
+        "static-carousel-content": {
+          "type": "_carousel-content",
+          "name": "t:names.carousel_content",
+          "static": true,
+          "settings": {
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "height": "fit",
+            "position": "top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_JLaHD3": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_3jCpqX": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_3jCpqX"
+              ]
+            },
+            "card_FmFBBH": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_HWYK9D": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_HWYK9D"
+              ]
+            },
+            "card_RbD6EG": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_pctMHb": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_pctMHb"
+              ]
+            },
+            "card_Vn3HY7": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_VgTnFH": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_VgTnFH"
+              ]
+            },
+            "card_E6YcP4": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_D4nhq6": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_D4nhq6"
+              ]
+            },
+            "card_4zfHrc": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_V8iCcF": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_V8iCcF"
+              ]
+            },
+            "card_pmNjAa": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_CY6Tih": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_CY6Tih"
+              ]
+            },
+            "card_xeWAWx": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_yEGbXw": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_yEGbXw"
+              ]
+            },
+            "card_nF6byX": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_F6ahPF": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_F6ahPF"
+              ]
+            }
+          },
+          "block_order": [
+            "card_JLaHD3",
+            "card_FmFBBH",
+            "card_RbD6EG",
+            "card_Vn3HY7",
+            "card_E6YcP4",
+            "card_4zfHrc",
+            "card_pmNjAa",
+            "card_xeWAWx",
+            "card_nF6byX"
+          ]
+        }
+      },
+      "name": "t:names.carousel",
+      "settings": {
+        "columns": 3,
+        "mobile_columns": "1",
+        "section_width": "page-width",
+        "columns_gap": 12,
+        "color_scheme": "",
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "padding-block-start": 0,
+        "padding-block-end": 48
+      }
+    },
+    "1773868373d9bcc930": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d9cb4a2_k9wgtf": {
+          "type": "ai_gen_block_d9cb4a2",
+          "settings": {
+            "header_image_width": 100,
+            "header_title": "",
+            "header_title_color": "#ffffff",
+            "header_title_size": 16,
+            "header_spacing": 20,
+            "card_background": "#ffffff",
+            "card_border_radius": 12,
+            "card_shadow_opacity": 0.1,
+            "card_padding": 20,
+            "grid_gap": 20,
+            "card_title_color": "#1b2a4a",
+            "card_title_size": 16,
+            "card_divider_color": "#1b2a4a",
+            "card_text_color": "#666666",
+            "card_text_size": 12,
+            "card_1_enabled": true,
+            "card_1_title": "SLS Tension Dial",
+            "card_1_text": "Adjustment dial that lets you tighten or loosen the brace with a single motion, for personalized and precise support.",
+            "card_2_enabled": true,
+            "card_2_title": "Dual Steel Lateral Stabilizers",
+            "card_2_text": "Prevent excessive lateral movement, reinforce joint support, while preserving natural flexibility.",
+            "card_3_enabled": true,
+            "card_3_title": "Integrated Patellar GEL Pad",
+            "card_3_text": "Protects the kneecap, absorbs impacts and reduces joint pressure for immediate comfort, even during movement.",
+            "card_4_enabled": true,
+            "card_4_title": "Anti-Slip Silicone Grip",
+            "card_4_text": "Prevents the brace from slipping or rolling, even during intense activities. Secure hold guaranteed all day long."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d9cb4a2_k9wgtf"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "17738685492801d9db": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_07555ee_Hri3GQ": {
+          "type": "ai_gen_block_07555ee",
+          "settings": {
+            "title": "What the experts say",
+            "title_size": 46,
+            "title_color": "#000000",
+            "title_spacing": 40,
+            "image_size": 120,
+            "quote": "I'm a physical therapist and I see dozens of knee braces; most compress without stabilizing. The Stabilix Pro™ is the only one I recommend to my patients and use myself. I cycle 150 km a week with an old meniscus injury: zero pain, zero slipping, even in the rain. The SLS™ dial lets me adjust compression while pedaling. Unheard of at this price.",
+            "quote_size": 16,
+            "quote_color": "#000000",
+            "expert_name": "Dr. James Anderson",
+            "name_size": 18,
+            "expert_role": "Sports physical therapist and amateur cyclist",
+            "role_size": 14,
+            "role_color": "#666666",
+            "card_background": "#ffffff",
+            "card_radius": 20,
+            "card_padding": 40,
+            "card_gap": 20,
+            "shadow_x": 0,
+            "shadow_y": 4,
+            "shadow_blur": 20,
+            "shadow_color": "#0000000f",
+            "accent_color": "#1d3686",
+            "background_color": "#ffffff",
+            "max_width": 700,
+            "section_padding": 60,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_07555ee_Hri3GQ"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_NQYAfm": {
+      "type": "section",
+      "blocks": {
+        "image_4VtbfV": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_dC8an4": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_QGTwWz": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>Deep support, not just compression</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_NgdCac": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>The Stabilix Pro™ doesn't just compress the knee like a conventional brace.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_P9FBba": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Its <strong>patellar GEL pad</strong> stabilizes the kneecap and absorbs every impact. </p><p><strong>Its dual flexible steel stabilizers</strong> prevent the lateral movements that worsen your pain. </p><p>Result: the joint stays <strong>in its natural axis, pressure is reduced immediately, and recovery is accelerated</strong>, whether after an injury, surgery or simply years of wear and tear.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_QGTwWz",
+            "text_NgdCac",
+            "text_P9FBba"
+          ]
+        }
+      },
+      "block_order": [
+        "image_4VtbfV",
+        "group_dC8an4"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_gHP3tq": {
+      "type": "section",
+      "blocks": {
+        "image_dCjc8z": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_a4txD8": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_aUF3ex": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>Put it on. Forget it. Move.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_VkNFxq": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Zero slipping even after 12 hours. The silicone grip locks the brace in place. Zero discomfort. The thermoregulating fabric is worn under jeans, work pants or athletic shorts without anyone noticing. Zero hassle. The SLS™ dial adjusts compression in 2 seconds, without removing the brace. You don't feel it anymore. Neither does your knee.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_aUF3ex",
+            "text_VkNFxq"
+          ]
+        }
+      },
+      "block_order": [
+        "image_dCjc8z",
+        "group_a4txD8"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_VJLWi7": {
+      "type": "section",
+      "blocks": {
+        "image_8teVf4": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_P69nhR": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_87YpEU": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>Size guide for optimal support</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_J8i7Pd": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Grab a measuring tape, measure the circumference of your knee at its widest point, and check the chart to choose the size that will give you the best support.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_87YpEU",
+            "text_J8i7Pd"
+          ]
+        }
+      },
+      "block_order": [
+        "image_8teVf4",
+        "group_P69nhR"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_w9cwGq": {
+      "type": "section",
+      "blocks": {
+        "text_4XtVJw": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>Frequently Asked Questions</h3>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_awyjgt": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_7fDxeK": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Can I wash the knee brace?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_CYQGxB": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes! It can be machine washed on a delicate cycle, but hand washing is recommended to extend its lifespan. Let it air dry, avoid the dryer and high temperatures.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_CYQGxB"
+              ]
+            },
+            "accordion_row_Gjxndk": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Can I return my order if I'm not satisfied?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_YrEnLh": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Absolutely. Sanovia offers a 60-day satisfaction guarantee or your money back. If the Stabilix Pro™ doesn't suit you, you can return it for a full refund. Returns are easily processed through our online portal — a prepaid return label will be provided.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_YrEnLh"
+              ]
+            },
+            "accordion_row_zYkmah": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Will the knee brace fit me?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_y3WDQH": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Yes! The Stabilix Pro™ is equipped with SLS™ quick-adjust technology, allowing precise and secure fitting. It's available in multiple sizes (M, L, XL, XXL) to fit all body types.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_y3WDQH"
+              ]
+            },
+            "accordion_row_XUBMtH": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How does it improve athletic performance?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_RPbArp": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>By keeping muscles warm and reducing fatigue, the Stabilix Pro™ helps prevent injuries, improve endurance and accelerate recovery. The compression and targeted support reduce stress on the knee during high-impact activities: running, jumping, weight training.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RPbArp"
+              ]
+            },
+            "accordion_row_y7h7wp": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Does it slip or roll during movement?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_gYTJn9": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>No. The anti-slip silicone band keeps the brace in place, even during intense workouts. Unlike classic knee braces that require constant readjustment, the Stabilix Pro™ stays put without friction or discomfort.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_gYTJn9"
+              ]
+            },
+            "accordion_row_X7kCxt": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Where is the product shipped from? What are the shipping costs?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_LVEUEG": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We ship from our US warehouse. Shipping is free on orders over $65. In case of local stock shortage, your order will be shipped from the nearest international warehouse to your address.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_LVEUEG"
+              ]
+            },
+            "accordion_row_yXQg3W": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "When will I receive my order?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_ccErga": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Orders are processed within 24 to 48 hours. Once shipped, delivery typically takes 5 to 7 business days in the US.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_ccErga"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_7fDxeK",
+            "accordion_row_Gjxndk",
+            "accordion_row_zYkmah",
+            "accordion_row_XUBMtH",
+            "accordion_row_y7h7wp",
+            "accordion_row_X7kCxt",
+            "accordion_row_yXQg3W"
+          ]
+        }
+      },
+      "block_order": [
+        "text_4XtVJw",
+        "accordion_awyjgt"
+      ],
+      "name": "t:names.faq_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 22,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "17738701197520caa6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_66ce386_ewdG9z": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "James A.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "1 hour ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "I'm a construction worker, on my feet 10 hours a day. My knees used to wake me up at night. From the first day with the Stabilix Pro, I noticed the difference. It's been 3 weeks, I never take it off.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_66ce386_ewdG9z"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_wL6T4B": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_66ce386_km48Uy": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "Michael G.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "3 hours ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "I got back to tennis after an 8-month break due to meniscus pain. The SLS dial is great, I adjust between sets without removing the brace. No slipping even while running.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_66ce386_mjxKnL": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "Anthony R.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "3 hours ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "Great product, well made. The gel on the kneecap really helps. Nothing to complain about, holds up all day, much better than the ones I had before.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_66ce386_e4dxNA": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "Sarah C.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "5 hours ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "Left knee arthritis for 4 years. I've spent a fortune on pharmacy knee braces that all end up rolled down to my ankle. This one doesn't move. The inner silicone does its job. I ordered a second one for my other knee.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_66ce386_hN383X": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "Frank L.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "6 hours ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "Delivered in 4 days, serious packaging. I put it on and wore it for 12 straight hours at the warehouse where I work. It didn't move a millimeter. It's lightweight, breathable, you forget it under your pants. Honestly surprised at the price.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_66ce386_LJaJhU": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "Mike S.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "8 hours ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "My wife got it for me because she was tired of seeing me limp after every bike ride. 200 kilometers this week, zero pain. The gel pad absorbs everything. Best investment of the year.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_66ce386_EM8kTP": {
+          "type": "ai_gen_block_66ce386",
+          "settings": {
+            "author_name": "John P.",
+            "image_size": 60,
+            "image_border_radius": 50,
+            "author_font_size": 16,
+            "author_font_weight": "600",
+            "author_color": "#000000",
+            "time_text": "1 day ago",
+            "time_font_size": 13,
+            "time_color": "#666666",
+            "star_rating": 5,
+            "star_size": 20,
+            "star_spacing": 4,
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "review_image_border_radius": 12,
+            "review_text": "Had ACL surgery 6 months ago. My physical therapist told me to find a good support to get back into sports. I tried the Stabilix Pro during soccer on Sunday. First full game since the surgery. Almost cried.",
+            "text_font_size": 14,
+            "text_color": "#333333",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "border_radius": 16,
+            "padding": 20,
+            "spacing": 16,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 4,
+            "shadow_blur": 12,
+            "shadow_color": "#00000014"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_66ce386_km48Uy",
+        "ai_gen_block_66ce386_mjxKnL",
+        "ai_gen_block_66ce386_e4dxNA",
+        "ai_gen_block_66ce386_hN383X",
+        "ai_gen_block_66ce386_LJaJhU",
+        "ai_gen_block_66ce386_EM8kTP"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "divider_wWQ8Ke": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "carousel_g77Frj",
+    "1773868373d9bcc930",
+    "17738685492801d9db",
+    "section_NQYAfm",
+    "section_gHP3tq",
+    "section_VJLWi7",
+    "section_w9cwGq",
+    "17738701197520caa6",
+    "blocks_wL6T4B",
+    "divider_wWQ8Ke"
+  ]
+}
