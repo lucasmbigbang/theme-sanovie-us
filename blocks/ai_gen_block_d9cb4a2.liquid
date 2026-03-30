@@ -1,0 +1,518 @@
+{% doc %}
+  @prompt
+    Crée une section réutilisable "Features Grid" avec :
+    
+    STRUCTURE :
+    - Header : image de fond (uploadable), titre centré en texte blanc par-dessus
+    - Grille 2x2 sur mobile, 1 ligne de 4 sur desktop
+    - Chaque carte : fond blanc, coins arrondis, ombre légère
+    
+    CHAQUE CARTE :
+    - Image rectangulaire en haut (ratio 4:3, bords arrondis en haut)
+    - Titre en gras bleu navy (#1B2A4A), taille h3
+    - Petit trait horizontal bleu (#1B2A4A) de 30px sous le titre
+    - Paragraphe en gris (#666), taille 14-15px
+    - Padding intérieur généreux (~20px)
+    
+    ÉDITABLE :
+    - Tous les textes, images et couleurs modifiables depuis le customizer
+    - Image de fond du header uploadable
+    - Nombre de blocs ajustable (2 à 4)
+    - Titre du header éditable
+    
+    La section doit ressembler à une fiche technique produit médicale/premium, sobre et rassurante., l'image du header de cette section n'est pas un background, c'est un image au dessus du titre, et on peut ajuster sa taille
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-features-grid-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-features-grid__header-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-features-grid__header-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ai-features-grid__header-image-{{ ai_gen_id }} {
+    width: {{ block.settings.header_image_width }}%;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .ai-features-grid__header-image-placeholder-{{ ai_gen_id }} {
+    width: {{ block.settings.header_image_width }}%;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+
+  .ai-features-grid__header-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-features-grid__header-title-{{ ai_gen_id }} {
+    text-align: center;
+    color: {{ block.settings.header_title_color }};
+    font-size: {{ block.settings.header_title_size }}px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .ai-features-grid__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-features-grid__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .ai-features-grid__card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity }});
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-features-grid__card-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: {{ block.settings.card_border_radius }}px {{ block.settings.card_border_radius }}px 0 0;
+  }
+
+  .ai-features-grid__card-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-features-grid__card-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-features-grid__card-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+  }
+
+  .ai-features-grid__card-content-{{ ai_gen_id }} {
+    padding: {{ block.settings.card_padding }}px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-features-grid__card-title-{{ ai_gen_id }} {
+    color: {{ block.settings.card_title_color }};
+    font-size: {{ block.settings.card_title_size }}px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .ai-features-grid__card-divider-{{ ai_gen_id }} {
+    width: 30px;
+    height: 2px;
+    background-color: {{ block.settings.card_divider_color }};
+    margin: 0;
+  }
+
+  .ai-features-grid__card-text-{{ ai_gen_id }} {
+    color: {{ block.settings.card_text_color }};
+    font-size: {{ block.settings.card_text_size }}px;
+    line-height: 1.6;
+    margin: 0;
+  }
+{% endstyle %}
+
+<features-grid-{{ ai_gen_id }} class="ai-features-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-features-grid__header-{{ ai_gen_id }}">
+    {% if block.settings.header_image %}
+      <div class="ai-features-grid__header-image-wrapper-{{ ai_gen_id }}">
+        <img
+          src="{{ block.settings.header_image | image_url: width: 1200 }}"
+          alt="{{ block.settings.header_image.alt | escape }}"
+          class="ai-features-grid__header-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.header_image.width }}"
+          height="{{ block.settings.header_image.height }}"
+        >
+      </div>
+    {% else %}
+      <div class="ai-features-grid__header-image-wrapper-{{ ai_gen_id }}">
+        <div class="ai-features-grid__header-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.settings.header_title != blank %}
+      <h2 class="ai-features-grid__header-title-{{ ai_gen_id }}">
+        {{ block.settings.header_title }}
+      </h2>
+    {% endif %}
+  </div>
+
+  <div class="ai-features-grid__container-{{ ai_gen_id }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign card_enabled_key = 'card_' | append: i | append: '_enabled'
+        assign card_image_key = 'card_' | append: i | append: '_image'
+        assign card_title_key = 'card_' | append: i | append: '_title'
+        assign card_text_key = 'card_' | append: i | append: '_text'
+
+        assign card_enabled = block.settings[card_enabled_key]
+        assign card_image = block.settings[card_image_key]
+        assign card_title = block.settings[card_title_key]
+        assign card_text = block.settings[card_text_key]
+      %}
+
+      {% if card_enabled %}
+        <div class="ai-features-grid__card-{{ ai_gen_id }}">
+          <div class="ai-features-grid__card-image-wrapper-{{ ai_gen_id }}">
+            {% if card_image %}
+              <img
+                src="{{ card_image | image_url: width: 400 }}"
+                alt="{{ card_image.alt | escape }}"
+                class="ai-features-grid__card-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{{ card_image.width }}"
+                height="{{ card_image.height }}"
+              >
+            {% else %}
+              <div class="ai-features-grid__card-image-placeholder-{{ ai_gen_id }}">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-features-grid__card-content-{{ ai_gen_id }}">
+            {% if card_title != blank %}
+              <h3 class="ai-features-grid__card-title-{{ ai_gen_id }}">
+                {{ card_title }}
+              </h3>
+            {% endif %}
+
+            <div class="ai-features-grid__card-divider-{{ ai_gen_id }}"></div>
+
+            {% if card_text != blank %}
+              <p class="ai-features-grid__card-text-{{ ai_gen_id }}">
+                {{ card_text }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</features-grid-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FeaturesGrid{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('features-grid-{{ ai_gen_id }}', FeaturesGrid{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Features grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "En-tête"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Image d'en-tête"
+    },
+    {
+      "type": "range",
+      "id": "header_image_width",
+      "label": "Largeur de l'image",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "header_title",
+      "label": "Titre",
+      "default": "Nos caractéristiques"
+    },
+    {
+      "type": "color",
+      "id": "header_title_color",
+      "label": "Couleur du titre",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "header_title_size",
+      "label": "Taille du titre",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "label": "Espacement sous l'en-tête",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Style des cartes"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_opacity",
+      "label": "Opacité de l'ombre",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "default": 0.1
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Padding intérieur",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Espacement entre cartes",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Typographie des cartes"
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Couleur du titre",
+      "default": "#1B2A4A"
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "label": "Taille du titre",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "card_divider_color",
+      "label": "Couleur du trait",
+      "default": "#1B2A4A"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Couleur du texte",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "card_text_size",
+      "label": "Taille du texte",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Carte 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_1_enabled",
+      "label": "Activer la carte 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "Titre",
+      "default": "Caractéristique 1"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_text",
+      "label": "Description",
+      "default": "Description de la caractéristique principale du produit."
+    },
+    {
+      "type": "header",
+      "content": "Carte 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_2_enabled",
+      "label": "Activer la carte 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_2_title",
+      "label": "Titre",
+      "default": "Caractéristique 2"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_text",
+      "label": "Description",
+      "default": "Description de la caractéristique principale du produit."
+    },
+    {
+      "type": "header",
+      "content": "Carte 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_3_enabled",
+      "label": "Activer la carte 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_3_title",
+      "label": "Titre",
+      "default": "Caractéristique 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_text",
+      "label": "Description",
+      "default": "Description de la caractéristique principale du produit."
+    },
+    {
+      "type": "header",
+      "content": "Carte 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_4_enabled",
+      "label": "Activer la carte 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_4_title",
+      "label": "Titre",
+      "default": "Caractéristique 4"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_text",
+      "label": "Description",
+      "default": "Description de la caractéristique principale du produit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features grid"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

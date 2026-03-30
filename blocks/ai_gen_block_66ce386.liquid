@@ -1,0 +1,507 @@
+{% doc %}
+  @prompt
+    cree une section avis client tres professioenlle, avec nombre etoile, custom couleur etoile, nom auteur, et image de l'avis don cimage en gros, avec aussi écrit il y a 3h je peux custom moi ce texte,
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-review-card-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.padding }}px;
+    box-shadow: {{ block.settings.shadow_horizontal }}px {{ block.settings.shadow_vertical }}px {{ block.settings.shadow_blur }}px {{ block.settings.shadow_color }};
+  }
+
+  .ai-review-card__container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.spacing }}px;
+  }
+
+  .ai-review-card__header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.spacing }}px;
+  }
+
+  .ai-review-card__image-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.image_size }}px;
+    height: {{ block.settings.image_size }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-review-card__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-review-card__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-review-card__image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-review-card__author-info-{{ ai_gen_id }} {
+    flex-grow: 1;
+  }
+
+  .ai-review-card__author-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.author_font_size }}px;
+    font-weight: {{ block.settings.author_font_weight }};
+    color: {{ block.settings.author_color }};
+    margin: 0 0 4px 0;
+  }
+
+  .ai-review-card__time-{{ ai_gen_id }} {
+    font-size: {{ block.settings.time_font_size }}px;
+    color: {{ block.settings.time_color }};
+  }
+
+  .ai-review-card__stars-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.star_spacing }}px;
+  }
+
+  .ai-review-card__star-{{ ai_gen_id }} {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-review-card__star-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-review-card__star-{{ ai_gen_id }}.empty svg {
+    fill: {{ block.settings.star_empty_color }};
+  }
+
+  .ai-review-card__review-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    border-radius: {{ block.settings.review_image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-review-card__review-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-review-card__review-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-review-card__review-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+  }
+
+  .ai-review-card__text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_font_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-review-card-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-review-card__image-wrapper-{{ ai_gen_id }} {
+      width: {{ block.settings.image_size | times: 0.8 }}px;
+      height: {{ block.settings.image_size | times: 0.8 }}px;
+    }
+
+    .ai-review-card__author-name-{{ ai_gen_id }} {
+      font-size: {{ block.settings.author_font_size | times: 0.9 }}px;
+    }
+
+    .ai-review-card__text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-review-card-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-review-card__container-{{ ai_gen_id }}">
+    <div class="ai-review-card__header-{{ ai_gen_id }}">
+      <div class="ai-review-card__image-wrapper-{{ ai_gen_id }}">
+        {% if block.settings.author_image %}
+          <img
+            src="{{ block.settings.author_image | image_url: width: 200 }}"
+            alt="{{ block.settings.author_name | escape }}"
+            class="ai-review-card__image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="200"
+            height="200"
+          >
+        {% else %}
+          <div class="ai-review-card__image-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-review-card__author-info-{{ ai_gen_id }}">
+        {% if block.settings.author_name != blank %}
+          <h3 class="ai-review-card__author-name-{{ ai_gen_id }}">{{ block.settings.author_name }}</h3>
+        {% endif %}
+        {% if block.settings.time_text != blank %}
+          <div class="ai-review-card__time-{{ ai_gen_id }}">{{ block.settings.time_text }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-review-card__stars-{{ ai_gen_id }}">
+      {% for i in (1..5) %}
+        <div class="ai-review-card__star-{{ ai_gen_id }} {% if i > block.settings.star_rating %}empty{% endif %}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if block.settings.review_image %}
+      <div class="ai-review-card__review-image-wrapper-{{ ai_gen_id }}">
+        <img
+          src="{{ block.settings.review_image | image_url: width: 1200 }}"
+          alt="{{ block.settings.author_name | escape }} review"
+          class="ai-review-card__review-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.review_image.width }}"
+          height="{{ block.settings.review_image.height }}"
+        >
+      </div>
+    {% else %}
+      <div class="ai-review-card__review-image-placeholder-{{ ai_gen_id }}">
+        {{ 'image' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.review_text != blank %}
+      <div class="ai-review-card__text-{{ ai_gen_id }}">
+        {{ block.settings.review_text }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Avis client",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Auteur"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Nom de l'auteur",
+      "default": "Sophie Martin"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Photo de l'auteur"
+    },
+    {
+      "type": "range",
+      "id": "image_size",
+      "label": "Taille de la photo",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Arrondi de la photo",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "author_font_size",
+      "label": "Taille du nom",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "author_font_weight",
+      "label": "Poids du nom",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Moyen"
+        },
+        {
+          "value": "600",
+          "label": "Semi-gras"
+        },
+        {
+          "value": "700",
+          "label": "Gras"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Couleur du nom",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Temps"
+    },
+    {
+      "type": "text",
+      "id": "time_text",
+      "label": "Texte du temps",
+      "default": "Il y a 3h"
+    },
+    {
+      "type": "range",
+      "id": "time_font_size",
+      "label": "Taille du texte",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "time_color",
+      "label": "Couleur du texte",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Étoiles"
+    },
+    {
+      "type": "range",
+      "id": "star_rating",
+      "label": "Nombre d'étoiles",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Taille des étoiles",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "star_spacing",
+      "label": "Espacement des étoiles",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur des étoiles pleines",
+      "default": "#FFD700"
+    },
+    {
+      "type": "color",
+      "id": "star_empty_color",
+      "label": "Couleur des étoiles vides",
+      "default": "#E0E0E0"
+    },
+    {
+      "type": "header",
+      "content": "Image de l'avis"
+    },
+    {
+      "type": "image_picker",
+      "id": "review_image",
+      "label": "Image de l'avis"
+    },
+    {
+      "type": "range",
+      "id": "review_image_border_radius",
+      "label": "Arrondi de l'image",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Texte de l'avis"
+    },
+    {
+      "type": "textarea",
+      "id": "review_text",
+      "label": "Texte de l'avis",
+      "default": "Produit exceptionnel ! Je l'utilise depuis 2 semaines et les résultats sont visibles. Je recommande vivement."
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "label": "Taille du texte",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Style de la carte"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Largeur sur ordinateur",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Espacement intérieur",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "label": "Espacement entre éléments",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Ombre"
+    },
+    {
+      "type": "range",
+      "id": "shadow_horizontal",
+      "label": "Décalage horizontal",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical",
+      "label": "Décalage vertical",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Flou de l'ombre",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Couleur de l'ombre",
+      "default": "#00000015"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis client"
+    }
+  ]
+}
+{% endschema %}
