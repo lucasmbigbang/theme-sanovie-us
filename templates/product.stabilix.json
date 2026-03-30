@@ -483,6 +483,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_6_230b7dad-817b-4da4-a6e9-3995ba46d6e3.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -538,6 +539,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_53fcddbc-4a06-4a8a-aa6c-8d70bd6726a0.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -593,6 +595,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_1_9f4f9c76-f84f-4d46-b26e-040d6537e760.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -648,6 +651,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_2_7059b534-b5d7-499d-a3c4-8bcd57154b71.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -703,6 +707,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/hf_20260217_235349_cf6e1994-487f-4c31-8608-b6ffc01061e2.png",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -758,6 +763,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_4_936a2aae-12b3-4c6d-b7b8-dcc79146ca14.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -813,6 +819,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_5_c584d7d1-dadd-4196-9b7d-295e808b86d4.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -868,6 +875,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/hf_20260217_235139_2eee6ba5-d8d0-49e9-8571-1db91ab9bc5e.png",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -923,6 +931,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/download_3_a0e86b34-35f9-49ed-ad18-76fed9f98f78.jpg",
                     "link": "",
                     "image_ratio": "portrait",
                     "width": "fill",
@@ -945,6 +954,62 @@
               "block_order": [
                 "image_F6ahPF"
               ]
+            },
+            "card_wqUmP4": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_4XAkeB": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/download_7_a11da12f-16aa-49e4-b02e-4d168d58b193.jpg",
+                    "link": "",
+                    "image_ratio": "portrait",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_4XAkeB"
+              ]
             }
           },
           "block_order": [
@@ -956,7 +1021,8 @@
             "card_4zfHrc",
             "card_pmNjAa",
             "card_xeWAWx",
-            "card_nF6byX"
+            "card_nF6byX",
+            "card_wqUmP4"
           ]
         }
       },
@@ -979,6 +1045,7 @@
         "ai_gen_block_d9cb4a2_k9wgtf": {
           "type": "ai_gen_block_d9cb4a2",
           "settings": {
+            "header_image": "shopify://shop_images/tecnologias_avanzadas.png",
             "header_image_width": 100,
             "header_title": "",
             "header_title_color": "#ffffff",
@@ -995,15 +1062,19 @@
             "card_text_color": "#666666",
             "card_text_size": 12,
             "card_1_enabled": true,
+            "card_1_image": "shopify://shop_images/download_8_cbaf4a61-fbb0-4371-be18-b8668e61f371.jpg",
             "card_1_title": "SLS Tension Dial",
             "card_1_text": "Adjustment dial that lets you tighten or loosen the brace with a single motion, for personalized and precise support.",
             "card_2_enabled": true,
+            "card_2_image": "shopify://shop_images/download_9_5d086e21-3b00-4394-afce-c876980ff844.jpg",
             "card_2_title": "Dual Steel Lateral Stabilizers",
             "card_2_text": "Prevent excessive lateral movement, reinforce joint support, while preserving natural flexibility.",
             "card_3_enabled": true,
+            "card_3_image": "shopify://shop_images/download_10_42566467-4d7c-4dd8-b1c2-3e9e97d7a80c.jpg",
             "card_3_title": "Integrated Patellar GEL Pad",
             "card_3_text": "Protects the kneecap, absorbs impacts and reduces joint pressure for immediate comfort, even during movement.",
             "card_4_enabled": true,
+            "card_4_image": "shopify://shop_images/download_11_923845f8-0dbc-4468-8cd6-8ebec0ea8d72.jpg",
             "card_4_title": "Anti-Slip Silicone Grip",
             "card_4_text": "Prevents the brace from slipping or rolling, even during intense activities. Secure hold guaranteed all day long."
           },
@@ -1051,6 +1122,7 @@
             "title_size": 46,
             "title_color": "#000000",
             "title_spacing": 40,
+            "expert_image": "shopify://shop_images/download_12_498cb549-6022-42f6-8e62-16dd74f43ee0.jpg",
             "image_size": 120,
             "quote": "I'm a physical therapist and I see dozens of knee braces; most compress without stabilizing. The Stabilix Pro™ is the only one I recommend to my patients and use myself. I cycle 150 km a week with an old meniscus injury: zero pain, zero slipping, even in the rain. The SLS™ dial lets me adjust compression while pedaling. Unheard of at this price.",
             "quote_size": 16,
@@ -1114,6 +1186,7 @@
         "image_4VtbfV": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/hf_20260218_001039_909fa3b4-d18f-400b-bd23-908ad0d9b7f6.png",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -1295,6 +1368,7 @@
         "image_dCjc8z": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/hf_20260218_001422_4ec2330a-3ea1-416f-80a4-d938f2470687.png",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -1980,6 +2054,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "James A.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -1993,6 +2068,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260218_002159_cd3bb996-583b-415f-9da2-948b94451106_1.png",
             "review_image_border_radius": 12,
             "review_text": "I'm a construction worker, on my feet 10 hours a day. My knees used to wake me up at night. From the first day with the Stabilix Pro, I noticed the difference. It's been 3 weeks, I never take it off.",
             "text_font_size": 14,
@@ -2048,6 +2124,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "Michael G.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707_8b534323-70dd-4601-aa52-126353d4910d.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2061,6 +2138,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260218_000146_313c317e-c9f0-4c63-9365-0310910259f8_1.png",
             "review_image_border_radius": 12,
             "review_text": "I got back to tennis after an 8-month break due to meniscus pain. The SLS dial is great, I adjust between sets without removing the brace. No slipping even while running.",
             "text_font_size": 14,
@@ -2081,6 +2159,7 @@
           "type": "ai_gen_block_66ce386",
           "settings": {
             "author_name": "Anthony R.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707_8b534323-70dd-4601-aa52-126353d4910d.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2094,6 +2173,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260217_235750_d7fa9ca1-68dc-44b0-b812-ec815a632fe9_1.png",
             "review_image_border_radius": 12,
             "review_text": "Great product, well made. The gel on the kneecap really helps. Nothing to complain about, holds up all day, much better than the ones I had before.",
             "text_font_size": 14,
@@ -2113,7 +2193,8 @@
         "ai_gen_block_66ce386_e4dxNA": {
           "type": "ai_gen_block_66ce386",
           "settings": {
-            "author_name": "Sarah C.",
+            "author_name": "Rick C.",
+            "author_image": "shopify://shop_images/cercle-bleu-utilisateur-blanc_78370-4707_8b534323-70dd-4601-aa52-126353d4910d.avif",
             "image_size": 60,
             "image_border_radius": 50,
             "author_font_size": 16,
@@ -2127,6 +2208,7 @@
             "star_spacing": 4,
             "star_color": "#ffd700",
             "star_empty_color": "#e0e0e0",
+            "review_image": "shopify://shop_images/hf_20260217_233835_f90c960b-f79e-4cc0-86e3-460d13b54bf9.png",
             "review_image_border_radius": 12,
             "review_text": "Left knee arthritis for 4 years. I've spent a fortune on pharmacy knee braces that all end up rolled down to my ankle. This one doesn't move. The inner silicone does its job. I ordered a second one for my other knee.",
             "text_font_size": 14,
